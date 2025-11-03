@@ -8,8 +8,9 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "cross-env BROWSER=none GENERATE_SOURCEMAP=${REACT_APP_ENABLE_SOURCE_MAPS:-false} react-scripts start",
+    "start:ci": "cross-env CI=true BROWSER=none GENERATE_SOURCEMAP=false react-scripts start",
+    "build": "cross-env GENERATE_SOURCEMAP=${REACT_APP_ENABLE_SOURCE_MAPS:-false} react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -28,6 +29,7 @@
       "last 1 safari version"
     ]
   },
+  "homepage": ".",
   "devDependencies": {
     "cross-env": "^7.0.3"
   }

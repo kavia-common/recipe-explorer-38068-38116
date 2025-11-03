@@ -15,8 +15,15 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in development mode.\
+Runs the app in development mode (opens without a browser in CI).
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Use `npm run start:ci` in CI to avoid sourcemaps and extra watchers.
+
+### Accessing the Sign In screen
+
+This template includes a pixel-accurate Sign In screen extracted from Figma.
+Navigate to `#/sign-in` in the URL to view it:
+- Example: http://localhost:3000/#/sign-in
 
 ### `npm test`
 
@@ -24,28 +31,17 @@ Launches the test runner in interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.
 
 ## Customization
 
 ### Colors
 
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
+The main brand colors are defined as CSS variables in `src/App.css`.
 
 ### Components
 
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
+This template uses pure HTML/CSS components. You can find component styles in `src/App.css`. 
 
 Common components include:
 - Buttons (`.btn`, `.btn-large`)
@@ -56,27 +52,3 @@ Common components include:
 ## Learn More
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

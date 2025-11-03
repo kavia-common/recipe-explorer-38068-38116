@@ -67,10 +67,8 @@ function SignIn() {
           {/* Battery group */}
           <div className="battery">
             {/* battery body/outline paths as rectangles/icons */}
-            <img alt="Battery fill" className="icon battery-fill" src="/assets/figmaimages/figma_image_13_71_128_306.svg" />
-            <img alt="Battery outline" className="icon battery-outline" src="/assets/figmaimages/figma_image_13_71_128_307.svg" />
+            {/* Decorative images from provided assets set are not available as .svg; keep structure with styled divs */}
             <div className="battery-cap"></div>
-            <img alt="" className="battery-inner" src="/assets/figmaimages/figma_image_13_71_128_309.svg" />
           </div>
           {/* Signal group (rectangles) */}
           <div className="signal">

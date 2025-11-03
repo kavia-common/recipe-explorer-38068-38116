@@ -8,6 +8,8 @@ import SignIn from './SignIn';
  * Lightweight route switcher using window.location.hash to avoid adding new dependencies.
  * - Supports "/" and "/sign-in" routes.
  * - Keeps CRA template minimal without react-router-dom.
+ * Usage:
+ *   Navigate to "#/sign-in" to view the pixel-accurate Sign In screen.
  */
 export default function Router() {
   const [hash, setHash] = React.useState(window.location.hash);
