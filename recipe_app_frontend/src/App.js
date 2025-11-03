@@ -19,8 +19,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <button 
-          className="theme-toggle" 
+        <button
+          className="theme-toggle"
           onClick={toggleTheme}
           aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
         >
@@ -41,6 +41,13 @@ function App() {
         >
           Learn React
         </a>
+
+        {/* Added navigation link to access the Sign In screen */}
+        <p style={{ marginTop: 24 }}>
+          <a className="App-link" href="#/sign-in" rel="noopener">
+            Go to Sign In
+          </a>
+        </p>
       </header>
     </div>
   );
